@@ -2,7 +2,7 @@ $(document).ready(function(){
   
 // Get Cushing, OK WTI Spot Price FOB, Monthly ($/barrel)
   
-  $.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.RWTC.M', function(response){
+  $.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.RWTC.M', function(response){
     var data = response.series[0].data;
 
     //Construct an array of months and an array of prices 
