@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 // U.S. Natural Gas Citygate Price, Monthly ($/1000 cubic feet)
 
-$.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=NG.N3050US3.M', function(response){
+$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=NG.N3050US3.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
@@ -92,7 +92,7 @@ $.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&serie
 
 // Average retail price of electricity : United States : residential : monthly
 
-$.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=ELEC.PRICE.US-RES.M', function(response){
+$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=ELEC.PRICE.US-RES.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
@@ -137,7 +137,7 @@ $.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&serie
 
 // Hydroelectric Power Consumption/Production, Monthly
 
-$.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=TOTAL.HVTCBUS.M', function(response){
+$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=TOTAL.HVTCBUS.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
