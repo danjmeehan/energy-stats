@@ -135,9 +135,9 @@ $.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&seri
       });
   }); 
 
-// Hydroelectric Power Consumption/Production, Monthly
+// U.S. Imports of Crude Oil and Petroleum Products, Monthly
 
-$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=TOTAL.HVTCBUS.M', function(response){
+$.get('http://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.MTTIMUS1.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
