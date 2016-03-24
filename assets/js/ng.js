@@ -1,8 +1,8 @@
 $(document).ready(function(){
   
-// Get Cushing, OK WTI Spot Price FOB, Monthly ($/barrel)
+// Get Henry Hub Natural Gas Spot Price, Monthly
   
-  $.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.RWTC.M', function(response){
+  $.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=NG.RNGWHHD.M', function(response){
     var data = response.series[0].data;
 
     //Construct an array of months and an array of prices 
@@ -45,9 +45,9 @@ $(document).ready(function(){
       });
   }); 
 
-// Los Angeles Reformulated RBOB Regular Gasoline Spot Price, Monthly
+// Get Natural Gas Futures Contract 1, Monthly
 
-$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.EER_EPMRR_PF4_Y05LA_DPG.M', function(response){
+$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=NG.RNGC1.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
@@ -90,9 +90,9 @@ $.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&seri
       });
   }); 
 
-// New York Harbor No. 2 Heating Oil Spot Price FOB, Monthly
+// Get Natural Gas Futures Contract 1, Monthly
 
-$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.EER_EPD2F_PF4_Y35NY_DPG.M', function(response){
+$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=NG.RNGC1.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
@@ -135,9 +135,9 @@ $.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&seri
       });
   }); 
 
-// Europe Brent Spot Price FOB, Monthly
+// Get Natural Gas Futures Contract 2, Monthly
 
-$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=PET.RBRTE.M', function(response){
+$.get('https://api.eia.gov/series/?api_key=79B09BD8C61785B1E8AC2898378E9855&series_id=NG.RNGC2.M', function(response){
     var data = response.series[0].data;
       
     //Construct an array of months and an array of prices 
